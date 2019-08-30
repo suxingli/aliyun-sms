@@ -1,4 +1,4 @@
-package com.aliyun.sms.util;
+package com.aliyun.sms.api;
 
 import com.aliyun.sms.ShortMessageContext;
 import com.aliyuncs.CommonRequest;
@@ -10,13 +10,13 @@ import com.aliyuncs.http.MethodType;
 import com.aliyuncs.profile.DefaultProfile;
 
 /**
- * 短信工具类
+ * 短信接口
  * @author 苏行利
- * @date 2019-08-28 09:49:30
+ * @date 2019-08-30 14:14:53
  */
-public class ShortMessageUtil {
+public class ShortMessageApi {
 	private static final ShortMessageContext ctx = ShortMessageContext.getInstance();
-
+	
 	/**
 	 * 发送短信验证码
 	 * @author 苏行利
@@ -24,7 +24,7 @@ public class ShortMessageUtil {
 	 * @param vcode 验证码
 	 * @throws ServerException
 	 * @throws ClientException
-	 * @date 2019-08-28 10:04:20
+	 * @date 2019-08-30 14:15:14
 	 */
 	public static void sendSMSCode(String mobile, String vcode) throws ServerException, ClientException {
 		DefaultProfile profile = DefaultProfile.getProfile(ctx.getRegion_id(), ctx.getAccess_key_id(), ctx.getAccess_secret());
