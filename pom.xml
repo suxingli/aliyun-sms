@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.suxingli</groupId>
 	<artifactId>aliyun-sms</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<name>阿里云短信接口工具包</name>
 	<url>https://github.com/suxingli/aliyun-sms.git</url>
 	<description>阿里云短信接口工具包</description>
